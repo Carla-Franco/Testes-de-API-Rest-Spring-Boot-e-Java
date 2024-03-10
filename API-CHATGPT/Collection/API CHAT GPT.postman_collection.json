@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "ede04df4-21ae-4f74-b6c7-cc25827282eb",
+		"name": "API CHAT GPT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24060315"
+	},
+	"item": [
+		{
+			"name": "https://api.openai.com/v1/chat/completions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{OPENAI_API_KEY}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"gpt-3.5-turbo\",\r\n  \"messages\": [\r\n    {\r\n      \"role\": \"user\",\r\n      \"content\": \"Qual a capital do Brasil?\"\r\n    }\r\n  ],\r\n  \"temperature\": 1,\r\n  \"max_tokens\": 256,\r\n  \"top_p\": 1,\r\n  \"frequency_penalty\": 0,\r\n  \"presence_penalty\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://api.openai.com/v1/chat/completions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openai",
+						"com"
+					],
+					"path": [
+						"v1",
+						"chat",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bot/chat?prompt=Qual a capital do Brasil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bot/chat?prompt=Qual a capital do Brasil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bot",
+						"chat"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "Qual a capital do Brasil"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
