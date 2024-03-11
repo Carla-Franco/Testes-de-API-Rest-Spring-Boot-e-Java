@@ -1,34 +1,67 @@
-# rest-with-spring-boot-and-java-erudio
 ## Curso de REST API's RESTFul do 0 à AWS com Spring Boot, Java e Docker
-* Seção 1: Apresentação;
-* Seção 2: Fundamentos teóricos do REST;
-* Seção 3: Configuração do ambiente de desenvolvimento no Windows;
-* Seção 4: Configuração do ambiente de desenvolvimento no Linux;
-* Seção 5: Primeiros passos em Spring Boot 3 com Java 18;
-* Seção 6: Entendendo Path Params e o tratamento de Exceptions no Spring Boot 3;
-* Seção 7: Como usar os verbos HTTP GET, POST, PUT e DELETE no Spring Boot;
-* Seção 8: Integrando a nossa API ao banco de dados MySQL;
-* Seção 9: O padrão de projetos VO (Value Object);
-* Seção 10: Versionamento de API's;
-* Seção 11: Adicionando suporte à Migrations com Flyway;
-* Seção 12: Custom JSON Serialization;
-* Seção 13: Content Negotiation;
-* Seção 14: Implementando HATEOAS (Hypermedia as the Engine of Application State);
-* Seção 15: Adicionando o suporte ao Swagger (Open API);
-* Seção 16: Configurando Cross-Origin Resource Sharing (CORS);
-* Seção 17: Autenticação com JWT e Spring Security;
-* Seção 18: Blindando nossa API com Rest Assured, Testcontainers e JUnit 5;
-* Seção 19: O verbo PATCH;
-* Seção 20: Query Params e busca paginada;
-* Seção 21: Upload e Download de Arquivos;
-* Seção 22: Dockerizando a Aplicação;
-* Seção 23: Implantando nossa Aplicação na Amazon AWS;
-* Seção 24: Integração Contínua na Amazon AWS com o Github Actions;
-* Seção 25: [EXTRA] Hacks e Atalhos de Produtividade;
-* Seção 26: [EXTRA] Conectando-se à Outros Bancos de Dados;
-* Seção 27: [EXTRA] Migrando para Java 15 e Spring Boot 2.4.1;
-* Seção 28: [EXTRA - Minicurso de React JS] Consumindo a API com ReactJS;
-* Seção 29: [EXTRA - Integração com o ChatGPT] Aprendendo a Consumir uma API de Terceiros;
-* Seção 30: [APÊNDICE] Minicurso de GIT e GitHub;
-* Seção 31: Conclusão;
-* Sseção 32: FAQ - Dúvidas mais Comuns
+
+Neste curso aprendi os fundamentos centrais de Webservices API's REST e RESTful tanto na teoria(10%), quanto na prática(90%). Esse conhecimento foi aplicado na implementação de uma API RESTful com SpringBoot 3 e Java 18. Iniciei com uma aplicação simples aprendendo como funciona as principais annotations e aprendendo a tratar exceções sempre avançando gradualmente para cenários mais complexos. Vi noções de HTTP, verbos/métodos, tipos de parâmetros, paginação, upload e download de arquivos, versionamento, HATEOAS, Swagger, autenticação e muito mais.
+
+Ao final adicionei o suporte ao Docker e implantei uma API em um cluster Amazon ECS de forma manual. E pra fechar o treinamento com chave de ouro implementei um pipeline de integração contínua envolvendo o Github, o Github Actions e um Cluster ECS na Amazon AWS. É incrível você commitar o código e enviar pro Github, e o Github Actions construir as Docker Images e implantar na Amazon "Automágicamente".
+
+Nesse treinamento utilizei estas tecnologias:
+
+* Spring Boot 3;
+* Java 18;
+* Conceitos arquiteturais do REST/RESTful;
+* Migrations com Flyway;
+* Postman;
+* Integração com o banco de dados MySQL;
+* Content Negotiation;
+* Versionamento de API’s;
+* HATEOAS;
+* Swagger Open API;
+* Autenticação com JWT e Spring Security;
+* Testes unitários e de integração com:
+* JUnit 5;
+* Mockito;
+* REST Assured;
+* Testcontainers.
+* Upload e download de arquivos;
+* Dockerização da Aplicação
+* Implantação na Amazon AWS
+* Integração Contínua na Amazon AWS com o Github Actions
+* Como consumir a API com React JS
+* Padrões de Projetos e muito mais!
+
+Ao final aprendi sobre atalhos de produtividade, como usar outros bancos de dados, como migrar de versões antigas para a versão mais recente do framework e como consumir uma API com React JS. 
+
+O que foi aprendido:
+
+* 10% Teoria e 90% Prática
+* A desenvolver uma API RESTFul do 0 absoluto
+* As boas práticas a se adotar ao desenvolver API’s
+* Entendi os conceitos teóricos que fundamentam o REST
+* Como trabalhar com Postman
+* Como fazer requests RESTful usando Postman
+* Entendi o modelo de maturidade RESTful
+* Os principais Verbos do REST
+* Como usar parâmetros via query, path, header e body
+* Paginação de API's
+* Versionamento de API's
+* Entendi sobre Media Types e Content Negotiation
+* Fazer upload de arquivos na sua API
+* Disponibilizar download de arquivos na sua API
+* Aprendi na prática HATEOAS
+* Documentar uma API com o Swagger (Open API)
+* Conceitos básicos de SQL e Migrations
+* Técnicas de Autenticação REST e segurança com JWT
+* Aprendi a usar alguns padrões de projetos
+* Dividir a aplicação em diferentes camadas
+* Testes unitários com JUnit 5 e Mockito
+* Testes de Integração com JUnit 5, REST Assured e Testcontainers
+* Utilizar os principais serviços da AWS como RDS, EC2, IAM User e ECS
+* Integração e Deploy Contínuos envolvendo o Github, o Github Actions e a Amazon AWS
+* Disponibilizar uma API na nuvem da Amazon AWS
+* Aprendi a consumir uma API de terceiros
+* Conceitos básicos de Docker
+* Conceitos básicos de Docker Compose
+* Como implantar o projeto na nuvem
+* Como Consumir a API com ReactJS
+* Como Integrar API's RESTful à API do ChatGPT
+
